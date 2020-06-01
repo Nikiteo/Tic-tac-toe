@@ -54,7 +54,6 @@ let players = ['x', 'o']; //массив игроков (можно добавл
 let boardSize = 3; //переменная указывает размер поля
 let activePlayer; //переменная активного игрока
 let board; //переменная с массивом доски  
-let countTips; //переменная подсчета ходов
 
 /**
  * Assigns a random number depending on the length of the transmitted array. Uses the given number as an array index.
@@ -88,7 +87,6 @@ function nextPlayer(strFromArray) {
 }
 
 function startGame() {
-	countTips = 0 //обнуление подсчета шагов
 	board = [];
 	for (let i = 0; i < boardSize; i++) {
 		board.splice(i, 0, []);
